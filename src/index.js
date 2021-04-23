@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Header from './Header';
+import GoogleApiWrapper from './MapContainer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Header />
+    <GoogleApiWrapper />
   </React.StrictMode>,
   document.getElementById('root')
 );
