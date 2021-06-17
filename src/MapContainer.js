@@ -26,7 +26,7 @@ for (let restaurant of restaurants) {
     restaurant.starsAverage = starsAverage
 }
 
-const res = fetch('https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76&key=AIzaSyAk8SmQXl4LHJY7kyQcMfUTCp7YUvXKkzY').then(res => res)
+const res = fetch('https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76&key=GOOGLE_API_KEY').then(res => res)
 console.log(res)
 
 export class MapContainer extends Component {
@@ -98,7 +98,7 @@ export class MapContainer extends Component {
                     <InfoWindow marker={this.state.activeMarker} visible={this.state.showingInfoWindow} onClose={this.onClose}>
                         <div>
                             <h4>{this.state.selectedPlace.name}</h4>
-                            <image src={'https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76&key=AIzaSyAk8SmQXl4LHJY7kyQcMfUTCp7YUvXKkzY'}></image>
+                            <image src={'https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76&key=GOOGLE_API_KEY'}></image>
                             {this.state.selectedPlace.ratings.map((rating, index) => {
                                 return <p key={index}>{rating.comment}</p>
                             })}
@@ -111,5 +111,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyAk8SmQXl4LHJY7kyQcMfUTCp7YUvXKkzY'
+    apiKey: 'GOOGLE_API_KEY'
 }) (MapContainer)
