@@ -20,7 +20,7 @@ const containerStyles = {
 const restaurants = require('./restaurants.json')
 let restaurantsToDisplay = restaurants
 
-const GOOGLE_API_KEY = 'AIzaSyAk8SmQXl4LHJY7kyQcMfUTCp7YUvXKkzY'
+const GOOGLE_API_KEY = ''
 
 // Calcul de la moyenne des avis pour chaque restaurant
 for (let restaurant of restaurants) {
