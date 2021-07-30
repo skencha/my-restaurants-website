@@ -1,0 +1,9 @@
+#infoWindowAddRestaurantDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#infoWindowAddRestaurantDiv label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

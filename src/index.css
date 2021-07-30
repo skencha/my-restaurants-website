@@ -17,14 +17,20 @@ p {
 }
 
 .footer {
-  padding-top: 20px;
-  width: 100%;
+  padding: 20px;
+  width: 30%;
   display: flex;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 600px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.dashboard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
